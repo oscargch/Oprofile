@@ -4,7 +4,8 @@
   "description": "",
   "main": "index.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "cd . && http-server -c-1",
   },
   "repository": {
     "type": "git",
@@ -15,5 +16,10 @@
   "bugs": {
     "url": "https://github.com/oscargch/StarewayCourses/issues"
   },
-  "homepage": "https://github.com/oscargch/StarewayCourses#readme"
+  "homepage": "https://github.com/oscargch/StarewayCourses#readme",
+  "dependencies": {
+    "eslint": "^5.6.0",
+    "htmllint-cli": "0.0.7",
+    "stylelint": "^9.5.0"
+  }
 }
