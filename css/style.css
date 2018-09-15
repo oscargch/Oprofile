@@ -1,4 +1,187 @@
 * {
   margin: 0;
   padding: 0;
+  box-sizing: border-box;
 }
+
+body {
+  font-family: 'Roboto';
+  background-color: #ffffff;
+  overflow-x: hidden;
+}
+
+/* Esta es la barra de navegacion. */
+.navbar {
+  font-family: 'Lato';
+  background-color: #f6f6f6;
+  overflow: hidden;
+  height: 63px;
+  text-align: right;
+  border-bottom: 1px solid rgba(128, 128, 128, 0.454);
+  box-shadow: 1px 0px 50px rgba(68, 68, 68, 0.488);
+}
+
+/* Este es el truquito del logo que se cambia con el hover */
+.logodiv {
+  width: 300px;
+  height: 0px;
+  position: relative;
+  right: 0px;
+  left: 60px;
+  bottom: 5px;
+  display: block;
+  margin: 0px;
+}
+
+.logodiv .logostw {
+  display: none;
+  position: absolute;
+}
+
+.logodiv:hover .logostw {
+  display: block;
+}
+  
+.logostw {
+  width: 300px;
+  padding: 0px;
+}
+
+.LogoRed {
+  width: 300px;
+}
+  
+/* Este es el menu hamburguesa. */
+.navbar a {
+  float: left;
+  display: block;
+  color: black;
+  text-align: center;
+  padding: 16px 16px;
+  text-decoration: none;
+  font-size: 15px;
+  border-radius: 30px;
+}
+
+.hamburger:hover path{
+  stroke: white;
+}
+  
+/* Lista no ordenada de links */
+.navbar ul {
+  margin: 8px 100px 0 0;
+  list-style: none;
+}
+  
+/* Mouseover links */
+.navbar a:hover {
+  background-color: rgba(0, 0, 0, 0.714);
+  border-radius: 0px;
+  color: white;
+  text-decoration: underline;
+  text-underline-position: under;
+  transition: 1s;
+}
+  
+.navbar ul li a:hover {
+  /* background-color: rgba(221, 221, 221, 0.146); */
+  color: white;
+  text-decoration: underline;
+  /* border-radius: 50%; */
+  box-shadow: 10 10 10 10 black;
+  backface-visibility: hidden;
+  transition: 1s;
+  /* text-shadow: 1px 1px 2px white; */
+  /* border-bottom: dashed 1px rgba(0, 0, 0, 0.515); */
+}
+  
+.hamburger:hover {
+  background-color: #ddd;
+  transition: .2s; 
+}
+  
+/* Lista de links */ 
+.navbar ul li {
+  display: inline-block;
+}
+  
+.side-nav {
+  height: 100%;
+  width: 0;
+  position: fixed;
+  z-index: 1;
+  top: 0;
+  left: 0;
+  background-color: #111;
+  opacity: 0.9;
+  overflow-x: hidden;
+  padding-top: 60px;
+  transition: 0.5s;
+}
+  
+.side-nav a {
+  padding: 10px 10px 10px 30px;
+  text-decoration: none;
+  font-size: 22px;
+  color: #ccc;
+  display: block;
+  transition: 0.3s;
+}
+  
+.side-nav a:hover {
+  color: #fff;
+  text-decoration: underline;
+}
+  
+.side-nav .btn-close {
+  position: absolute;
+  top: 0;
+  right: 22px;
+  font-size: 36px;
+  margin-left: 50px;
+}
+  
+/* Este es el boton de Spanish */
+input[class=spanish] {
+  position: absolute;
+  top: 0px;
+  right: 0px;
+  height: 63px;
+  background-color: #0082cb;
+  border: none;
+  color: rgba(255, 255, 255, 0.796);
+  padding: 16px 20px;
+  text-decoration: none;
+  margin: 0px;
+  cursor: pointer;
+  transition: .5s;
+  -webkit-appearance: none;
+  -webkit-border-radius: 0;
+}
+  
+input[class=spanish]:hover {
+  background-color: #ee3b44;
+  color: white;
+  transition: .5s;
+  text-shadow: 1px 1px 2px black;
+  -webkit-appearance: none;
+}
+
+@media(max-width:1155px) {
+  .navbar-nav {
+    display: none;
+}
+
+}
+    
+@media(min-width: 1156px) {
+  .open-slide {
+      display: none;
+  }
+  
+}
+    
+@media(max-width:580px) {
+
+}
+  

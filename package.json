@@ -1,8 +1,12 @@
 {
   "name": "starewaycourses",
   "version": "1.0.0",
-  "description": "Stareway Courses Website",
+  "description": "",
   "main": "index.js",
+  "dependencies": {
+    "npm": "^6.4.1"
+  },
+  "devDependencies": {},
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1"
   },
@@ -10,13 +14,10 @@
     "type": "git",
     "url": "git+https://github.com/oscargch/StarewayCourses.git"
   },
-  "author": "Oscar Garcia",
+  "author": "oscar garcia",
   "license": "ISC",
   "bugs": {
     "url": "https://github.com/oscargch/StarewayCourses/issues"
   },
-  "homepage": "https://github.com/oscargch/StarewayCourses#readme",
-  "dependencies": {
-    "npm": "^6.4.1"
-  }
+  "homepage": "https://github.com/oscargch/StarewayCourses#readme"
 }
