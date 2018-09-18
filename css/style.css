@@ -236,12 +236,18 @@ input[class=spanish]:hover {
 .coursebox:hover img {
   transform: scale(1.04); 
   -webkit-transform: scale(1.04);
-  transition:transform .4s ease;
   opacity: 1;
+  transition: .4s ease;
 }
 
-.coursebox:hover {
-  /* cursor: pointer; */
+.courseBottom h3 {
+  margin: 20px;
+  opacity: 0.7;
+}
+
+.coursebox:hover h3 {
+  opacity: 1;
+  color: red;
 }
 
 }
@@ -276,7 +282,7 @@ input[class=spanish]:hover {
   left: -50px; */
   display:block;
   margin:auto;
-  transition:transform .4s ease;
+  transition: .4s ease;
   opacity: 0.7;
 }
 
