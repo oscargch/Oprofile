@@ -381,30 +381,54 @@ main h1 {
 }
 
 .footer {
-  height: 300px;
+  height: auto;
   background-color: black;
   padding-top: 70px;
   margin-top: 50px;
   }
 
 .footer1 {
-  width: 800px;
+  width: 100%;
   margin-left: auto;
   margin-right: auto;
   /* margin-top: 50px; */
   background-color: black;
-  height: 300px;
+  height: auto;
   overflow: hidden;
   color: white;
-  display: flex;
-  justify-content: space-between;
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(400px, 1fr));
+  grid-column-gap: 6px;
+  grid-row-gap:6px;
+  /* justify-content: space-between; */
   /* margin-top: 20px;
   position: relative; */
+}
+
+.box {
+  background: black;
+  padding: 20px;
+  height: auto;
+  text-align: center;
 }
 
 .footer1 p {
   padding: 3px 0px;
 }
+
+.socialmedia {
+  margin-top: 20px;
+}
+  
+.officeinfo {
+  margin-top: 20px;
+}
+
+.contactus {
+  margin-top: 20px;
+}
+
+
 
 @media(max-width:1159px) {
   
@@ -465,7 +489,7 @@ main h1 {
   
 }
     
-@media(max-width: 590px) {
+@media(max-width: 750px) {
 
 .logodiv h1 {
   display: none;
@@ -572,5 +596,5 @@ main h1 {
     /* display:block;
     margin:auto; */
   }
-  
+
   } 
