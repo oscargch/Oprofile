@@ -7,18 +7,18 @@
 
 body {
   font-family: 'Roboto';
-  background-color: rgba(0, 0, 0, 0.625);
+  background-color: rgb(179, 177, 177);
   overflow-x: hidden;
 }
 
 .divtitle {
-  color: rgba(255, 255, 255, 0.906);
+  color: rgba(255, 255, 255, 0.961);
 }
 
 /* Esta es la barra de navegacion. */
 .navbar {
   font-family: 'Lato';
-  background-color: #f6f6f6;
+  background-color: rgb(179, 177, 177);
   overflow: hidden;
   height: 63px;
   text-align: right;
