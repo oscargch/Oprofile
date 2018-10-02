@@ -1,3 +1,4 @@
+/* This is getting rid of all th emargins on the document */
 * {
   margin: 0;
   padding: 0;
@@ -21,10 +22,11 @@ body {
   /* box-shadow: 1px 0px 50px rgba(68, 68, 68, 0.488); */
 }
 
+/* Este es el texto a un lado del logo que dice Web-Projects */
 .logodiv h1 {
   position: absolute;
-  top: 32px;
-  right: -130px;
+  top: 25px;
+  right: -215px;
   font-family: futura;
   font-size: 30px;
 }
@@ -51,15 +53,17 @@ body {
   z-index: 99;
 }
   
+/* Este es el logo rojo al que se cambia */
 .logostw {
   width: 300px;
   padding: 0px;
-  opacity: 0.7;
+  opacity: 0.9;
 }
 
+/* Este es el logo azul principal */
 .LogoRed {
   width: 300px;
-  opacity: 0.7;
+  opacity: 0.9;
 }
   
 /* Este es el menu hamburguesa. */
@@ -191,7 +195,7 @@ input[class=spanish]:hover {
 
 .mainimage img {
   width: 100vw;
-  height: 250px;
+  height: 60px;
   object-fit: cover;
   opacity: 0.8;
   box-shadow: 1px 1px 50px rgba(0, 0, 0, 0.385);
@@ -210,6 +214,12 @@ input[class=spanish]:hover {
   text-shadow: 1px 1px 10px black;
 }
 
+main h1 {
+  color: rgba(0, 0, 0, 0.604);
+  text-align: center;
+  margin: 0 0 40px 0;
+}
+
 .coursecontainer {
   display: flex;
   flex-direction: row;
@@ -223,7 +233,7 @@ input[class=spanish]:hover {
   background-color: white;
   color: black;
   margin: 20px 15px;
-  flex-basis: 550px;
+  flex-basis: 500px;
   /* flex-grow: 0; */
   /* flex-shrink: 0; */
   /* width: 350px; */
@@ -233,10 +243,23 @@ input[class=spanish]:hover {
   overflow: hidden;
 }
 
+/* This is the effect on the image on the course div when hovered. */
 .coursebox:hover img {
   transform: scale(1.04); 
   -webkit-transform: scale(1.04);
   opacity: 1;
+  transition: .4s ease;
+}
+
+.coursebox h1 {
+  transition: .4s ease;
+}
+
+.coursebox:hover h1 {
+  transform: scale(1.04); 
+  -webkit-transform: scale(1.04);
+  opacity: 1;
+  color: rgba(255, 0, 0, 0.851);
   transition: .4s ease;
 }
 
@@ -250,11 +273,13 @@ input[class=spanish]:hover {
   color: red;
 }
 
+.coursebox p {
+  margin-top: 10px;
 }
 
 .courseTop {
-  width: 550px;
-  height: 250px;
+  width: 500px;
+  height: 450px;
   margin: 0px;
   margin-bottom: 0px;
   padding-left: 0px;
@@ -265,7 +290,11 @@ input[class=spanish]:hover {
 }
 
 .courseBottom hr {
-  
+  width: 60%;
+  border: 0;
+  height: 1px;
+  background: #333;
+  background-image: linear-gradient(to right, #ccc, #333, #ccc);
 }
 
 .courseBottom {
@@ -275,11 +304,11 @@ input[class=spanish]:hover {
 
 .courseTop img {
   object-fit: cover;
-  max-width: 100%;
-  max-height: 100%;
-  /* position: relative;
-  top: -10px;
-  left: -50px; */
+  width: 100%;
+  height: 100%;
+  position: relative;
+  top: -3px;
+  left: 1px;
   display:block;
   margin:auto;
   transition: .4s ease;
@@ -290,13 +319,22 @@ input[class=spanish]:hover {
   /* background-color: #d8d8d8; */
 }
 
+.courseFooter h2 {
+  font-size: 15px;
+  position: relative;
+  left: 50px;
+  top: 25px;
+  text-decoration: underline;
+  font-style: italic;
+}
+
 .courseFooterButton {
   background-color: #0082cb;
   color: white;
   padding: 7px;
   position: relative;
   float: right;
-  margin-right: 60px;
+  margin-right: 20px;
   margin-bottom: 10px;
   font-size: 13px;
   transition: 1s;
@@ -308,7 +346,33 @@ input[class=spanish]:hover {
   color: white;
   position: relative;
   float: right;
-  margin-right: 60px;
+  margin-right: 20px;
+  margin-bottom: 10px;
+  font-size: 13px;
+  transition: .5s;
+  cursor: pointer;
+  text-decoration: underline;
+}
+
+.courseFooterButtonEnroll {
+  background-color: #0082cb;
+  color: white;
+  padding: 7px;
+  position: relative;
+  float: right;
+  margin-right: 50px;
+  margin-bottom: 10px;
+  font-size: 13px;
+  transition: 1s;
+  border-radius: 5px;
+}
+
+.courseFooterButtonEnroll:hover {
+  background-color: #ee3b44;
+  color: white;
+  position: relative;
+  float: right;
+  margin-right: 50px;
   margin-bottom: 10px;
   font-size: 13px;
   transition: .5s;
@@ -386,7 +450,7 @@ input[class=spanish]:hover {
 .logodiv h1 {
   position: absolute;
   top: 35px;
-  right: -75px;
+  right: -140px;
   font-family: futura;
   font-size: 24px;
 }
